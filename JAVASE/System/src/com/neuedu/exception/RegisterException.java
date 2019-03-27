@@ -1,6 +1,6 @@
-package com.neudeu;
+package com.neuedu.exception;
 
-public class RegisterException extends RuntimeException {
+public class RegisterException extends Exception {
 	public RegisterException() {
 		
 	}
