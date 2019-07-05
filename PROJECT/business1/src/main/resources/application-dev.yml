@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+limit:
+  minMoney: 1
+  maxMoney: 10
+  desc: 最低${limit.minMoney}最高${limit.maxMoney}
+
+
+  spring:
+    datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://39.105.34.71:3306/scott
+        username: fy2019
+        password: Qq850347097.
+        max-active: 20
+        max-wait: 6000
+        min-idle: 1
+        test-on-borrow: true
+        test-on-return: true
+  mybatis:
+    mapper-locations: classpath*:com/neuedu/mapper/*Mapper.xml
+    config-location: classpath:mybatis-config.xml
